@@ -45,7 +45,11 @@
       
         <tags>
             
-            <tag> Meeting_Notes, Spot_Beam_Allocation, Thesis </tag>
+            <tag> Meeting_Notes </tag>
+            
+            <tag> Spot_Beam_Allocation </tag>
+            
+            <tag> Thesis </tag>
             
         </tags>
       
@@ -61,6 +65,20 @@
         <content type="html"><![CDATA[<h1 id="Blog-Command"><a href="#Blog-Command" class="headerlink" title="Blog Command"></a>Blog Command</h1><h2 id="Create-New-Blog-Command-List"><a href="#Create-New-Blog-Command-List" class="headerlink" title="Create New Blog Command List:"></a>Create New Blog Command List:</h2><p>Update：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;title&quot;</span></span><br><span class="line">hexo clean //清理缓存</span><br><span class="line">hexo g //上传本地</span><br><span class="line">hexo s //预览</span><br><span class="line">hexo d //上传GitHub</span><br></pre></td></tr></table></figure><h2 id="Version-Control"><a href="#Version-Control" class="headerlink" title="Version Control:"></a>Version Control:</h2><p>Update：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git status //查看当前的git仓库状态，可以使用git status</span><br><span class="line">git add * //更新全部</span><br><span class="line">git commit <span class="literal">-m</span> “更新说明” //接着输入git commit <span class="literal">-m</span> “更新说明”</span><br><span class="line">git pull //先git pull,拉取当前分支最新代码（也就是获取GitHub上的最新代码信息，更新本地代码）</span><br><span class="line">git push origin main //push到远程main分支上（修改本地代码后，再更新GitHub上的代码）</span><br></pre></td></tr></table></figure><br><h1 id="Common-Command-List"><a href="#Common-Command-List" class="headerlink" title="Common Command List"></a>Common Command List</h1><h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span> //显示当前终端会话所在的目录位置 (print work directory)</span><br><span class="line"><span class="built_in">ls</span> //显示当前目录下的所有文件 (list file)</span><br><span class="line"><span class="built_in">cd</span> 路径 //切换目录 (change directory)</span><br><span class="line"><span class="built_in">cd</span> .. //切换到上一级目录</span><br><span class="line"><span class="built_in">clear</span> //清屏</span><br></pre></td></tr></table></figure><h2 id="Git-Command"><a href="#Git-Command" class="headerlink" title="Git Command"></a>Git Command</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">git config user.name //查看git用户名</span><br><span class="line">git config user.email //查看git邮箱地址</span><br><span class="line">git config --global user.name &quot;username&quot; //修改git用户名</span><br><span class="line">git config --global user.email &quot;email&quot; //修改git邮箱地址</span><br><span class="line"></span><br><span class="line">git init //git初始化，会在当前目录初始化创建一个.git隐藏文件夹</span><br><span class="line"></span><br><span class="line">git add [filename] //添加文件到暂存区</span><br><span class="line">git add . //添加当前目录所有文件到暂存区</span><br><span class="line"></span><br><span class="line">git commit //文件提交</span><br><span class="line">git commit –m &quot;commit message&quot; //文件提交 添加提交信息</span><br><span class="line"></span><br><span class="line">git log //列出日志信息</span><br><span class="line">git log –-all //列出所有的log</span><br><span class="line"></span><br><span class="line">git reset [--soft | --mixed | --hard] [HEAD] //用于回退版本，可以指定退回某一次提交的版本</span><br><span class="line">git reset HEAD^            //回退所有内容到上一个版本</span><br><span class="line">git reset HEAD^ hello.php  //回退 hello.php 文件的版本到上一个版本</span><br><span class="line">git  reset  052e           //回退到指定版本</span><br><span class="line">git reset --soft HEAD~3   //回退上上上一个版本</span><br><span class="line">git reset --hard HEAD //撤销工作区中所有未提交的修改内容，将暂存区与工作区都回到上一次版本，并删除之前的所有信息提交</span><br><span class="line">git reset --hard HEAD~3  //回退上上上一个版本</span><br><span class="line">git reset –-hard bae128  //回退到某个版本回退点之前的所有信息。</span><br><span class="line">git reset --hard origin/master    //将本地的状态回退到和远程的一样</span><br><span class="line"></span><br><span class="line">git branch [new branchname] //新建分支</span><br><span class="line">git branch –D [new branchname] //删除本地分支</span><br><span class="line">git branch –rd origin/newbranch //删除服务器仓库分支</span><br><span class="line">git remote prune origin //同步远端已删除的分支</span><br><span class="line">git checkout [branchname] //切换分支</span><br><span class="line">git merge [branch] //合并分支</span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
       
     </entry>
     
