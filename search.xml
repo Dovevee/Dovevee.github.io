@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Thesis_Meeting_Notes_Week3v1</title>
+      <link href="/posts/48613.html"/>
+      <url>/posts/48613.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Week-3-Meeting-Note"><a href="#Week-3-Meeting-Note" class="headerlink" title="Week_3 Meeting_Note"></a>Week_3 Meeting_Note</h1><h2 id="Reflection-on-Thesis-A"><a href="#Reflection-on-Thesis-A" class="headerlink" title="Reflection on Thesis A"></a>Reflection on Thesis A</h2><ol><li>Got a good list of references but haven’t summarized the main points from the papers that have referenced (Went into a lot of mathematical depths without describing the context), so it wasn’t clear and didn’t convince the reader that writer understand those papers.</li><li>Not necessary to understand all of the mathematical details and all of the mathematics of papers, but necessary to understand what those papers are claiming to have done, what’s the main point of the paper.</li><li>It’s important that writer can read a paper and understand what the main things that paper is claiming to be able to show or the main result in the paper.</li><li>It’s also important to be able to decide whether writer think that’s an interesting result or not an interesting result or whether you believe what paper are claiming. (Perhaps it wasn’t in a real situation or it had made a lot of assumptions).</li></ol><h2 id="Project-Management"><a href="#Project-Management" class="headerlink" title="Project Management"></a>Project Management</h2><ol><li>Presentation: Think a bit more about how to present what you’re doing and explain what you’re doing (For example, introduce me to you, remind of what had been doing before right now, give a brief summary to remind of where writer got up to).</li></ol><h2 id="Project-Implement"><a href="#Project-Implement" class="headerlink" title="Project Implement"></a>Project Implement</h2><ol><li><p>Find and prove code that implements algorithm in papers. (As an engineer, be strict.) (Can’t assume something are the same thing and then scratch about why other things aren’t working well.)</p></li><li><p>Very ambitious to try to implement a genetic algorithm without actual MATLAB code or accompanying website. The purpose of these projects is not to have writer understand every single aspect of a research paper and implement every aspect of a research paper.</p></li><li><p>What should I do? Suggestion from Prof.</p><ol><li><p>One of things you can do: Find some MATLAB programs either in the MATLAB tool boxed that already exist or online for running beamforming like satellite beamforming type code. (“If you can find a program that tells you for a satellite at a certain location and you can give some parameters of frequency bands and things like this, and if it can do beamforming and show you the beams on the ground, if someone has already written that code and you can download that code and run that code yourself then that is something that I think is a good thing to do. You can use the code as a tool to try to explore things about the code, you could look at different performance parameters, you could look at how big the beam shape is on the ground for different as a function of frequency, you could look at how much overlap there is in different beams if they are close together and then you can look at signal to interference ratios if you just basically use that program as a tool to try to understand some practical questions like generate beams and have them maps next to each other and show the coverage of eg. Australia. In this case, you’re finding code, not writing it yourself. You’re just changing parameters and then you’re exploring things that are interesting to learn about. That is one thing that you could do and I think that would make a good thesis.”)</p></li><li><p>The other thing you could do: If you can’t find some code like that, the other thing to do is to write your own program to try to form beams and try to know the shape of beams on the ground, but you do that very very simply with just a very very simple model, with nothing complicated, no genetic algorithms, nothing like this, just a very simple approach. (eg, What would be your most basic approach to trying to work out how many beams you would need to cover Australia and how many antenna elements would you need to form those beams.) I think that you can find some papers that talk about beamforming and you can know the number of elements in the array and at the frequency band that will tell you the angle of the beams and then you could write a program that where you can put in the real distance that is the distance of a satellite, you could have the distance of a satellite with a beam that’s formed with a certain angle and then you can work out just from sort of high school trigonometry, you could work out how big that beam is on the Earth’s surface. You could write your own program to do that just with those distances,those angles, the number of antenna elements, how big the beam is.</p></li><li><p>You could start to build that up yourself. Let’s say there’s more users on the coast right like Sydney and Melbourne and so on, less users in the center and then you could think of an algorithm yourself for how to share those beams to do time-sharing. Maybe you spend more time with the beams that are on the coast and less time with the beams that are in the center. Let’s say you could have 10 beams at the same time then where would you send those, where would you focus those 10 beams and then the next time slot, where would you focus them and the next time slot, where would you focus them. And then you would repeat so that you keep coming back and covering everybody. You can write a very simple program about that just for using some high school maths and putting in the height of a satellite and knowing some basic things about beamforming, you could write a MATLAB program that does that.</p></li><li><p>Not wise to try to implement a big complicated genetic algorithm that you’ve read about in papers, and it’s just too hard.</p></li><li><p>Try to find some program that is already there that you can just run. Look in the MATLAB toolbox, see what it’s got for beamforming from satellites. For example, see if the code already exist that can draw circles on the ground where the beam cover. If you can find that you can use that as a tool. That’s one direction you can go.</p></li><li><p>If can’t find that, write your own program, very very basic, make some very basic assumptions and start drawing circles on the ground based on the distance, the angles and some basic things and then you can start having circles on the ground and you can start thinking where should I put the centers of those circles, how much overlap should I have.</p></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Spot_Beam_Allocation </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Meeting_Notes, Spot_Beam_Allocation, Thesis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CommandList</title>
+      <link href="/posts/13236.html"/>
+      <url>/posts/13236.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Blog-Command"><a href="#Blog-Command" class="headerlink" title="Blog Command"></a>Blog Command</h1><h2 id="Create-New-Blog-Command-List"><a href="#Create-New-Blog-Command-List" class="headerlink" title="Create New Blog Command List:"></a>Create New Blog Command List:</h2><p>Update：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;title&quot;</span></span><br><span class="line">hexo clean //清理缓存</span><br><span class="line">hexo g //上传本地</span><br><span class="line">hexo s //预览</span><br><span class="line">hexo d //上传GitHub</span><br></pre></td></tr></table></figure><h2 id="Version-Control"><a href="#Version-Control" class="headerlink" title="Version Control:"></a>Version Control:</h2><p>Update：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git status //查看当前的git仓库状态，可以使用git status</span><br><span class="line">git add * //更新全部</span><br><span class="line">git commit <span class="literal">-m</span> “更新说明” //接着输入git commit <span class="literal">-m</span> “更新说明”</span><br><span class="line">git pull //先git pull,拉取当前分支最新代码（也就是获取GitHub上的最新代码信息，更新本地代码）</span><br><span class="line">git push origin main //push到远程main分支上（修改本地代码后，再更新GitHub上的代码）</span><br></pre></td></tr></table></figure><br><h1 id="Common-Command-List"><a href="#Common-Command-List" class="headerlink" title="Common Command List"></a>Common Command List</h1><h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span> //显示当前终端会话所在的目录位置 (print work directory)</span><br><span class="line"><span class="built_in">ls</span> //显示当前目录下的所有文件 (list file)</span><br><span class="line"><span class="built_in">cd</span> 路径 //切换目录 (change directory)</span><br><span class="line"><span class="built_in">cd</span> .. //切换到上一级目录</span><br><span class="line"><span class="built_in">clear</span> //清屏</span><br></pre></td></tr></table></figure><h2 id="Git-Command"><a href="#Git-Command" class="headerlink" title="Git Command"></a>Git Command</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">git config user.name //查看git用户名</span><br><span class="line">git config user.email //查看git邮箱地址</span><br><span class="line">git config --global user.name &quot;username&quot; //修改git用户名</span><br><span class="line">git config --global user.email &quot;email&quot; //修改git邮箱地址</span><br><span class="line"></span><br><span class="line">git init //git初始化，会在当前目录初始化创建一个.git隐藏文件夹</span><br><span class="line"></span><br><span class="line">git add [filename] //添加文件到暂存区</span><br><span class="line">git add . //添加当前目录所有文件到暂存区</span><br><span class="line"></span><br><span class="line">git commit //文件提交</span><br><span class="line">git commit –m &quot;commit message&quot; //文件提交 添加提交信息</span><br><span class="line"></span><br><span class="line">git log //列出日志信息</span><br><span class="line">git log –-all //列出所有的log</span><br><span class="line"></span><br><span class="line">git reset [--soft | --mixed | --hard] [HEAD] //用于回退版本，可以指定退回某一次提交的版本</span><br><span class="line">git reset HEAD^            //回退所有内容到上一个版本</span><br><span class="line">git reset HEAD^ hello.php  //回退 hello.php 文件的版本到上一个版本</span><br><span class="line">git  reset  052e           //回退到指定版本</span><br><span class="line">git reset --soft HEAD~3   //回退上上上一个版本</span><br><span class="line">git reset --hard HEAD //撤销工作区中所有未提交的修改内容，将暂存区与工作区都回到上一次版本，并删除之前的所有信息提交</span><br><span class="line">git reset --hard HEAD~3  //回退上上上一个版本</span><br><span class="line">git reset –-hard bae128  //回退到某个版本回退点之前的所有信息。</span><br><span class="line">git reset --hard origin/master    //将本地的状态回退到和远程的一样</span><br><span class="line"></span><br><span class="line">git branch [new branchname] //新建分支</span><br><span class="line">git branch –D [new branchname] //删除本地分支</span><br><span class="line">git branch –rd origin/newbranch //删除服务器仓库分支</span><br><span class="line">git remote prune origin //同步远端已删除的分支</span><br><span class="line">git checkout [branchname] //切换分支</span><br><span class="line">git merge [branch] //合并分支</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hex_Test03</title>
+      <link href="/posts/48370.html"/>
+      <url>/posts/48370.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><p>一级标题</p><h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>二级标题</p><h2 id="2-1"><a href="#2-1" class="headerlink" title="2"></a>2</h2><p>二级标题</p><h2 id="2-2"><a href="#2-2" class="headerlink" title="2"></a>2</h2><p>二级标题</p><h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>三级标题</p><h3 id="3-1"><a href="#3-1" class="headerlink" title="3"></a>3</h3><p>三级标题</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hex_Hello World</title>
+      <link href="/posts/49586.html"/>
+      <url>/posts/49586.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hex_Test02</title>
+      <link href="/posts/31795.html"/>
+      <url>/posts/31795.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Command"><a href="#Command" class="headerlink" title="Command"></a>Command</h1><h2 id="Create-New-Blog-Command-List"><a href="#Create-New-Blog-Command-List" class="headerlink" title="Create New Blog Command List:"></a>Create New Blog Command List:</h2><p>Update：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;title&quot;</span></span><br><span class="line">hexo clean //清理缓存</span><br><span class="line">hexo g //上传本地</span><br><span class="line">hexo s //预览</span><br><span class="line">hexo d //上传GitHub</span><br></pre></td></tr></table></figure><br><h2 id="Version-Control"><a href="#Version-Control" class="headerlink" title="Version Control:"></a>Version Control:</h2><p>Update：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git status //查看当前的git仓库状态，可以使用git status</span><br><span class="line">git add * //更新全部</span><br><span class="line">git commit <span class="literal">-m</span> “更新说明” //接着输入git commit <span class="literal">-m</span> “更新说明”</span><br><span class="line">git pull //先git pull,拉取当前分支最新代码（也就是获取GitHub上的最新代码信息，更新本地代码）</span><br><span class="line">git push origin main //push到远程main分支上（修改本地代码后，再更新GitHub上的代码）</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hex_Test01</title>
+      <link href="/posts/32115.html"/>
+      <url>/posts/32115.html</url>
+      
+        <content type="html"><![CDATA[<p>Test01<br>InputTest01</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hex_CodeShrinkTest</title>
+      <link href="/posts/17811.html"/>
+      <url>/posts/17811.html</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">a</span> ()&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
